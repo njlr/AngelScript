@@ -1,0 +1,17 @@
+cxx_library(
+  name = 'scriptstdstring',
+  header_namespace = '',
+  exported_headers = [
+    'scriptstdstring.h',
+  ],
+  srcs = [
+    'scriptstdstring.cpp',
+    'scriptstdstring_utils.cpp',
+  ],
+  visibility = [
+    '//...'
+  ],
+  deps = [
+    '//:angelscript',
+  ],
+)

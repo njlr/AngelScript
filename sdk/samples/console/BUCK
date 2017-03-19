@@ -1,0 +1,11 @@
+cxx_binary(
+  name = 'console',
+  srcs = glob([
+    'source/**/*.cpp',
+  ]),
+  deps = [
+    '//:angelscript',
+    '//sdk/add_on/scripthelper:scripthelper',
+    '//sdk/add_on/scriptstdstring:scriptstdstring',
+  ],
+)
